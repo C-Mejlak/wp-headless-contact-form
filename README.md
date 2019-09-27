@@ -32,12 +32,12 @@ if( empty( $new_field ) ) {
 ## Sending a POST request with Axios.
 
 ```js
-const form = document.getElementByIf('my-form');
+const form = document.getElementById('my-form');
 const formData = new FormData(form);
 
 axios.post('https://your-domain.com/wp-json/send-contact-form/v1/contact', formData)
 .then(({data}) => {
     // data.success will be true if successful
-    // else you'll receive the error messages to display under each input filed
+    // else you'll receive the error messages to display under each input field
 }
 ```
